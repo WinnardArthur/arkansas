@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="./js/all.js"></script>
+    <title>Arkansas</title>
+
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script type="text/javascript">
+      google.charts.load("current", {packages:["corechart"]});
+      google.charts.setOnLoadCallback(drawChart);
+      function drawChart() {
+        var data = google.visualization.arrayToDataTable([
+          ['Dinosaur', 'Length'],
+          ['Acrocanthosaurus (top-spined lizard)', 22.2],
+          ['Ultrasaurus (ultra lizard)', 30.5],
+          ['Ultrasaurus (ultra lizard)', 15.5],
+          ['Ultrasauruss (ultra lizard)', 0.5],
+          ['Ultrasaurusss(ultra lizard)', 6.5],
+          ['Ultrasaurusssss (ultra lizard)', 25.5],
+
+          ['Velociraptor (swift robber)', 1.8]]);
+
+        var options = {
+          title: 'Healthy Eating Index',
+          legend: { position: 'none' },
+          colors: ['gray'],
+          histogram: { lastBucketPercentile: 5 },
+
+        };
+
+        var chart = new google.visualization.Histogram(document.getElementById('chart_div'));
+        chart.draw(data, options);
+      }
+    </script>
+</head>
+<body>
+    
+    <header>
+        <a href="#" class="logo">
+            <img src="./images/Logo.png" alt="">
+        </a>
+        <ul class="navElements">
+            <li><a href="#">About tool</a></li>
+            <div class="verticalBar"></div>
+            <li><a href="#">How it work</a></li>
+            <div class="verticalBar"></div>
+            <li><a href="#">Resources</a></li>
+            <div class="verticalBar"></div>
+            <li><a href="#">Sign in</a></li>
+        </ul>
+        <div class="rightElements">
+            <span>Eng</span>
+            <button class="toggleBars">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </button>
+        </div>
+    </header>
+
+    <div class="pageDivider">
+        <div class="leftAnchor"></div>
+        <div class="middleAnchor"></div>
+        <div class="rightAnchor"></div>
+    </div>
+
+    <div class="heroSection">
+        <img src="./images/1_JqFgM7CLNIOVkjADyeVKPA.png" alt="Hero Image">
+    </div>
+
+    <main>
+        <section class="categoriesSection">
+            <div class="categoryContent">
+                <a href="#" class="category">
+                    <img src="./images/IMG-20210813-WA0003.jpg" alt="">
+                    <h5>Home</h5>
+                </a>
+                <a href="./Nutrition & Health Outlook.html" class="category activeCategory">
+                    <img src="./images/IMG-20210813-WA0004.jpg" alt="">
+                    <h5>Nutrition & Health Outlook</h5>
+                </a>
+                <a href="./Sustainability Outlook.html" class="category">
+                    <img src="./images/PikPng.com_green-energy-png_3749294.png" alt="">
+                    <h5>Sustainability Outlook</h5>
+                </a>
+            </div>
+            
+            <hr class="categoriesBar">
+            <button class="categoriesBtn">Back</button>
+            <div><i class="fa fa-caret-down"></i></div>
+        </section>
+
+        <section class="categoryBody">
+            <div class="categoryBody__header">
+                <div>
+                    <img src="./images/Topping from vegetable pizza.jpg" alt="">
+                    <h5>Fish & Chips</h5>
+                    <div class="verticalBar"></div>
+                </div>
+                <div>
+                    <h5>Type of meal : <span>Breakfast</span></h5>
+                    <div class="verticalBar"></div>
+                </div>
+                <div>
+                    <h5>Time of meal: <span>07:20 ECT</span></h5>
+                </div>
+            </div>
+
+            <hr class="categoriesBar">
+
+            <div class="categoryBody__content">
+                <div class="column1">
+                    <h3>Results</h3>
+                    <div class="barChart__container">
+                        <h6>Healthy Living Index</h6>
+                        <h2>55</h2>
+                        <div id="chart_div" class="barChart">
+                            
+                        </div>
+                    </div>
+                    <div class="pieChart__container">
+                        <h4>Healthy Eating</h4>
+                        <img src="./images/PikPng.com_graph-png_1799196.png" alt="">
+                        <span>This meal is slightly unhealthy</span>
+                    </div>
+                </div>
+
+                <div class="column1 column2">
+                    <h3>Recommendation</h3>
+                    <div class="recommendation">
+                        <h5>Consider adding these food to your diet</h5>
+                        <ul>
+                            <li>Fruits and vegetables</li>
+                            <li>Fruits and vegetables</li>
+                        </ul>
+                    </div>
+
+                    <button>View FOOD nutritional composition</button>
+                    <button style="font-size: 2rem;">&#11015;</button>
+                    <button><a href="./Nutrition & Health Outlook2.html">Health Living contribution</a></button>
+                </div>
+
+            </div>
+        </section>
+    </main>
+
+    <div class="pageDivider">
+        <div class="leftAnchor"></div>
+        <div class="middleAnchor"></div>
+        <div class="rightAnchor"></div>
+    </div>
+
+    <section class="partners__section">
+        <h2>Our Partners</h2>
+        <div class="partners">
+            <div class="partner">
+                <img src="./images/Arkansas-logo.jpg" alt="Arkansas">
+            </div>
+            <div class="partner">
+                <img src="./images/Chartwell.jpg" alt="Chartwell">
+                <h2>Chartwell</h2>
+            </div>
+        </div>
+    </section>
+
+
+    <hr class="categoriesBar">
+
+    <footer>
+        <div class="row1">
+            <ul>
+                <h3>Community</h3>
+                <a href="#">Create Account</a>
+                <a href="#">Get a promo</a>
+                <a href="#">Get Coupon Code</a>
+            </ul>
+    
+            <ul>
+                <h3>Support</h3>
+                <a href="#">Terms & Conditions</a>
+                <a href="#">Privacy & Policy</a>
+                <a href="#">Copyright Issue</a>
+                <a href="#">Get help</a>
+            </ul>
+    
+            <ul>
+                <h3>Site Map</h3>
+                <a href="#">Terms & Conditions</a>
+                <a href="#">Privacy & Policy</a>
+                <a href="#">Copyright Issue</a>
+            </ul>
+    
+            <ul>
+                <h3>Download APP</h3>
+                <button>Apple IOs</button>
+                <button>Google Play</button>
+            </ul>
+        </div>
+        <div class="row2">
+            <h5>Copyright 2021 University of Arkansas</h5>
+            <div>
+                <h5>Conceived and designed by:</h5>
+                <h5>Department of Biological and Agricultural Engineering</h5>
+            </div>
+            <h5><a href="#">www.uark.edu</a></h5>
+        </div>
+        
+    </footer>
+
+
+
+    <script src="./js/script.js"></script>
+</body>
+</html>
