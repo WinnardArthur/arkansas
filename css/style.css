@@ -114,6 +114,7 @@ main {
 
 .categoriesSection {
     cursor: pointer;
+    position: relative;
 }
 
 .categoryContent {
@@ -322,7 +323,7 @@ main {
 
 .caret-down-btn {
     position: absolute;
-    left: 76%;
+    left: 82.5%;
 }
 
 .categoryBody__content .column2 ul > button {
@@ -424,6 +425,193 @@ main {
 .partners__section .partners img {
     width: 15rem;
     height: 5rem;
+}
+
+.home__CaretDown {
+    left: 9rem;
+    top: 14rem;
+}
+
+.enterInstructionHeader {
+    margin-top: 4rem;
+}
+
+.selectFood__content {
+    display: flex;
+    justify-content: space-between;
+}
+.selectFood__content > .column1{
+    width: 40%;
+}
+.selectFood__content > .column2 {
+    margin-right: 10%;
+}
+
+.selectFood__container {
+    border: 1px solid var(--primary-color);
+    padding: 1rem;
+    border-radius: 18px;
+    width: 100%;
+}
+
+.selectFood__wrapper {
+    width: 100%;
+    position: relative;
+}
+
+.selectFood__wrapper .selectFood__carousel {
+    width: 100%;
+}
+
+.selectFood__wrapper .item {
+    display: flex;
+    justify-content: space-between;
+    padding-left: 1rem;
+}
+
+.selectFood__wrapper .item .food1 {
+    border: 1px solid lavender;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 12px;
+    margin-right: 12px;
+    width: 45%;
+}
+
+.selectFood__wrapper .item img {
+    width: 5rem;
+}
+
+.selectFood__wrapper .item h6 {
+    margin: .5rem auto;
+    font-size: .8rem;
+}
+
+.selectFood__wrapper .item .roundBtn {
+    background-color: transparent;
+    border: 1px solid lavender;
+    height: 1.5rem;
+    width: 1.5rem;
+    border-radius: 50%;
+}
+
+.selectFood__wrapper .item .roundBtn.active {
+    background-color: var(--primary-color);
+}
+
+.selectFood__wrapper .selectedFood-carousel-controls .prevFood,.nextFood{
+    position: absolute;
+    font-size: 2rem;
+    color: gray;
+    cursor: pointer;
+    top: 45%;
+    z-index: 1;
+}
+
+.selectFood__wrapper .selectedFood-carousel-controls .prevFood {
+    left: -.8rem;
+}
+
+.selectFood__wrapper .selectedFood-carousel-controls .nextFood {
+    right: -1rem;
+}
+
+.selectedFoods {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 5rem;
+    align-items: center;
+}
+
+.selectedFoods > button {
+    background-color: var(--primary-color);
+    color: white;
+    border-radius: 5px;
+    padding: .5em 1rem;
+    border: none;
+    font-size: .9rem;
+}
+
+.selectedFood__container {
+    border: 1px solid var(--primary-color);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 1rem;
+    margin-top: 1rem;
+    border-radius: 12px;
+}
+
+.selectedFood__container > img {
+    width: 8rem;
+}
+
+.selectedFood__container > div {
+
+}
+
+.selectedFood__container > div > button {
+    display: block;
+    margin-bottom: 5px;
+    font-size: 1.2rem;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+}
+.selectedFood__container > div >button  span {
+    font-size: 3rem;
+}
+.selectedFood__container > div > button .wrong {
+    color: red;
+}
+.selectedFood__container > div > button .correct {
+    color: green;
+}
+.selectMeal {
+    margin-top: 4rem;
+}
+
+.selectMeal h5 {
+    font-size: 1rem;
+    margin-bottom: .2rem;
+}
+
+.selectMeal select {
+    width: 100%;
+    padding: .5rem;
+    border-radius: 5px;
+}
+
+.checkings {
+    border-radius: 12px;
+    border: 1px solid var(--primary-color);
+    margin-top: 5rem;
+    padding: 1rem;
+}
+
+.checkings h3 {
+    text-align: center;
+}
+
+.checkings a {
+    display: block;
+    text-decoration: none;
+    background-color: var(--primary-color);
+    margin-bottom: 1rem;
+    padding: 1rem;
+    color: #fff;
+    border-radius: 8px;
+    position: relative;
+}
+
+.checkings a span {
+    position: absolute;
+    font-size: 2.5rem;
+    right: 1rem;
+    top: 0rem;
 }
 
 footer .row1 {
