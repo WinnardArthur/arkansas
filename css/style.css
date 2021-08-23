@@ -217,6 +217,33 @@ header > .rightElements > .toggleBars > .bar{
     background-color: var(--green-color);
   }
   
+  .foodlanceHeroArea {
+      margin-bottom: 10rem;
+  }
+@media screen and (min-width: 1400px) {
+    .foodlanceHeroArea {
+        margin-bottom: 15rem;
+    } 
+}
+@media screen and (min-width: 1500px) {
+    .foodlanceHeroArea {
+        margin-bottom: 20rem;    } 
+}
+  .foodlanceHeroArea .wrapper .owl-theme .owl-dots .owl-dot span{
+    width: 1.5rem;
+    height: 1.5rem;
+    border-radius: 50%;
+    border: 1px solid var(--primary-color);
+    background-color: transparent;
+  }
+  .foodlanceHeroArea .wrapper .owl-theme .owl-dots .owl-dot.active span{
+    background-color: var(--primary-color);
+  }
+  .foodlanceHeroArea .heroBtn {
+    top: 50%;
+    z-index: 5;
+    color: var(--primary-color);
+  }
 
 .lapSystem__about {
     background-color: var(--green-color);
@@ -490,6 +517,42 @@ header > .rightElements > .toggleBars > .bar{
     position: relative;
 }
 
+
+/* ======= Update ======== */
+
+.ULFSE__section .leftCircles {
+    position: absolute;
+    top: -3rem;
+    left: 5%;
+}
+
+.ULFSE__section .bigGreenCircle {
+    width: 6rem;
+    height: 6rem;
+    background-color: var(--green-color);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.ULFSE__section .smallWhiteCircle {
+    width: 5rem;
+    height: 5rem;
+    border-radius: 50%;
+    background-color: white;
+}
+
+.ULFSE__section .rightCircles {
+    position: absolute;
+    top: -3rem;
+    right: 5%;
+}
+
+/* ===== Update ====== */
+
+
 .ULFSE__section h1 {
     font-size: 2rem;
 }
@@ -706,7 +769,7 @@ main {
 .categoryBody__content .barChart__container .barChart {
     height: 12rem;
     width: 100%;
-    background-color: lavender;
+    background-color: rgba(0, 0, 0, .3);
 }
 .categoryBody__content .pieChart__container {
     border: 2px solid var(--primary-color);
@@ -842,7 +905,7 @@ main {
 }
 
 .sustainabilityOutlook__categories .column-1 .imgContainer {
-    background-color: lavender;
+    background-color: rgba(240, 240, 240, .3);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -1160,7 +1223,7 @@ footer .row1 {
     margin-bottom: 2rem;
 }
 .osi__content .column2 .row-1 > div {
-    background-color: lavender;
+    background-color: rgba(0, 0, 0, .2);
     position: relative;
 }
 
