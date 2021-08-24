@@ -103,6 +103,7 @@
             <button class="categoriesBtn">Back</button>
         </section>
 
+
         <section class="categoryBody">
             <div class="categoryBody__header">
                 <div>
@@ -121,7 +122,21 @@
 
             <hr class="categoriesBar">
 
-            <div>
+            <!-- Updates -->
+            <div style="position: relative;">
+                <section class="modal">
+                    <div>
+                        <h1>Modal</h1>
+                        <ol>
+                            <li>item1</li>
+                            <li>item2</li>
+                            <li>item3</li>
+                            <li>item4</li>
+                            <li>item5</li>
+                        </ol>
+                        <button class="closeModalBtn" onclick="closeModal()">&times;</button>
+                    </div>
+                </section>
                 <div class="selectFood__content categoryBody__content osi__content">
                     <div class="column1">
                         <h3>Overall Sustainability Advisory</h3>
@@ -145,12 +160,22 @@
                                         <div class="food1">
                                             <img src="./images/Topping from vegetable pizza.jpg" alt="">
                                             <h6>Fish & Chips</h6>
-                                            <div class="roundBtn active"></div>
+                                            <div>
+                                                <div class="roundBtn active"></div>
+                                                <button class="favoriteBtn">
+                                                    <img src="./images/heart.png" alt="" onclick="showModal()">
+                                                </button>
+                                            </div>
                                         </div>
                                         <div class="food1">
                                             <img src="./images/PikPng.com_food-png_1032584.png" alt="">
                                             <h6>Humburger</h6>
-                                            <div class="roundBtn"></div>
+                                            <div>
+                                                <div class="roundBtn active"></div>
+                                                <button class="favoriteBtn">
+                                                    <img src="./images/heart.png" alt="" onclick="showModal()">
+                                                </button>
+                                            </div>
                                         </div>
                                     </div>
     
@@ -158,12 +183,22 @@
                                         <div class="food1">
                                             <img src="./images/Topping from vegetable pizza.jpg" alt="">
                                             <h6>Fish & Chips</h6>
-                                            <div class="roundBtn active"></div>
+                                            <div>
+                                                <div class="roundBtn active"></div>
+                                                <button class="favoriteBtn">
+                                                    <img src="./images/heart.png" alt="" onclick="showModal()">
+                                                </button>
+                                            </div>
                                         </div>
                                         <div class="food1">
                                             <img src="./images/PikPng.com_food-png_1032584.png" alt="">
                                             <h6>Humburger</h6>
-                                            <div class="roundBtn"></div>
+                                            <div>
+                                                <div class="roundBtn active"></div>
+                                                <button class="favoriteBtn">
+                                                    <img src="./images/heart.png" alt="" onclick="showModal()">
+                                                </button>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
@@ -222,6 +257,9 @@
     
                 </div>
             </div>
+
+            <!-- End of Updates -->
+
         </section>
     </main>
 
