@@ -221,13 +221,14 @@ header > .rightElements > .toggleBars > .bar{
       margin-bottom: 10rem;
   }
 @media screen and (min-width: 1400px) {
-    .foodlanceHeroArea {
+    .foodlanceHeroArea, .heroArea {
         margin-bottom: 15rem;
     } 
 }
 @media screen and (min-width: 1500px) {
-    .foodlanceHeroArea {
-        margin-bottom: 20rem;    } 
+    .foodlanceHeroArea, .heroArea {
+        margin-bottom: 20rem;    
+    } 
 }
   .foodlanceHeroArea .wrapper .owl-theme .owl-dots .owl-dot span{
     width: 1.5rem;
