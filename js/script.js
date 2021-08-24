@@ -49,3 +49,28 @@ $('.nextFood').click(function(){
 $('.prevFood').click(function(){
     testimonialOwl.trigger('prev.owl.carousel', [300])
 })
+
+// updates
+
+function showModal() {
+    const modal = document.querySelector('.modal')
+    const favoriteBtns = document.querySelectorAll('.favoriteBtn')
+
+    for (var i = 0; i < favoriteBtns.length; i++) {
+        var favoriteBtn = favoriteBtns[i];
+        favoriteBtn.onclick = function () {
+            modal.style.display = 'block'
+        };
+    }
+    }
+
+function closeModal() {
+    const modal = document.querySelector('.modal')
+    const closeModalBtn = document.querySelector('.closeModalBtn')
+
+    closeModalBtn.addEventListener('click', () => {
+        modal.style.display = 'none'
+    })
+}
+
+

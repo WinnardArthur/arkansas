@@ -933,6 +933,43 @@ main {
     cursor: pointer;
 }
 
+/* update */
+
+.modal {
+    background-color: var(--primary-color);
+    color: white;
+    padding: 1rem;
+    width: 50%;
+    margin: 0 auto;
+    display: none;
+    position: absolute;
+    left: 25%;
+    top: 20%;
+    z-index: 1;
+}
+
+.modal > div {
+    position: relative;
+}
+
+.modal h1 {
+    text-align: center;
+    font-size: 2rem;
+}
+
+.modal button {
+    background-color: transparent;
+    font-size: 3rem;
+    color: white;
+    border: none;
+    outline: none;
+    position: absolute;
+    right: 5%;
+    top: 5%;
+    cursor: pointer;
+}
+
+/* End of updates */
 
 .partners__section {
 
@@ -1019,8 +1056,28 @@ main {
     width: 45%;
 }
 
+.selectFood__wrapper .item .food1 > div {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+    cursor: pointer;
+}
+
+.selectFood__wrapper .item .food1 > div > button {
+    width: 1.65rem;
+    background-color: white;
+    border: none;
+}
+
+.selectFood__wrapper .item .food1 > div > button > img {
+    width: 100%;
+}
+
 .selectFood__wrapper .item img {
     width: 5rem;
+    display: block;
+    cursor: pointer;
 }
 
 .selectFood__wrapper .item h6 {
@@ -1108,6 +1165,7 @@ main {
 .selectedFood__container > div > button .correct {
     color: green;
 }
+
 .selectMeal {
     margin-top: 4rem;
 }
